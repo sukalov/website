@@ -12,6 +12,11 @@ import "@fontsource/great-vibes";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <script>
+      document.fonts.ready.then(() => {
+        document.documentElement.classList.add("fonts-loaded");
+      });
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       rel="preload"
@@ -51,7 +56,7 @@ import "@fontsource/great-vibes";
 
 <style>
   @font-face {
-    font-family: 'Great Vibes';
+    font-family: "Great Vibes";
     size-adjust: 140%;
   }
   html,
@@ -60,5 +65,9 @@ import "@fontsource/great-vibes";
     width: 100%;
     height: 100%;
     font-family: "Exo 2 Variable", monospace;
+  }
+  :not(.fonts-loaded) body {
+    opacity: 0;
+    visibility: hidden;
   }
 </style>
