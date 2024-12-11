@@ -1,36 +1,47 @@
 ---
-import '@fontsource-variable/exo-2';
-import '@fontsource/great-vibes';
+import "@fontsource-variable/exo-2";
+import "@fontsource/great-vibes";
 ---
 
 <div id="container">
-	<main class="flex flex-col gap-4 justify-center items-center h-svh">
-		<section id="hero-rus" class=" max-w-96">
-			<h1>
-				меня зовут матвей соколовский<span class="text-xl">.</span> в основном я программирую сайты на 
-				<span class="text-xl">&nbsp;тайпскрипте,</span> а ещё сейчас осваиваю <span class="text-xl">го.</span>
-				обычно сайты получаются красивее<span class="text-xl">,</span> чем этот<span class="text-xl">.</span> вот мой <a href="https://github.com/sukalov" class="underline hover:opacity-60" aria-label="ссылка на гитхаб">гитхаб</a>
-			</h1>
-			<section id="links">
-			</section>
-		</section>
-		<div class="w-full border"></div>
-		<section id="hero-en" class="max-w-96">
-			<h1>
-				my name is matvey sokolovsky<span class="text-xl">.</span> i mainly do webdeving in <span class="text-xl">&nbsp;typescript,</span> but also exploring <span class="text-xl">&nbsp;go&nbsp;</span> as for now<span class="text-xl">.</span> 
-				my websites are usually fancier than this one<span class="text-xl">.</span> here is my <a href="https://github.com/sukalov" class="underline hover:opacity-60" aria-label="ссылка на гитхаб">github</a><span class="text-xl"></span>
-			</h1>
-			<section id="links">
-			</section>
-		</section>
-	</main>
+  <main class="flex flex-col gap-4 justify-center items-center h-svh">
+    <section id="hero-rus" class="max-w-96">
+      <h1>
+        меня зовут матвей соколовский в основном я программирую сайты на
+        <span>&nbsp;тайпскрипте,</span> а ещё сейчас осваиваю <span>го.</span>
+        обычно сайты получаются красивее<span>,</span> чем этот. вот мой <a
+          href="https://github.com/sukalov"
+          class="underline hover:opacity-60"
+          aria-label="ссылка на гитхаб">гитхаб</a
+        >
+      </h1>
+      <section id="links"></section>
+    </section>
+    <div class="w-full border"></div>
+    <section id="hero-en" class="max-w-96">
+      <h1>
+        my name is matvey sokolovsky i mainly do webdeving in <span
+          >&nbsp;typescript,</span
+        > but also exploring <span>&nbsp;go&nbsp;</span> as for now. my websites
+        are usually fancier than this one. here is my <a
+          href="https://github.com/sukalov"
+          class="underline hover:opacity-60"
+          aria-label="ссылка на гитхаб">github</a
+        >
+      </h1>
+      <section id="links"></section>
+    </section>
+  </main>
 </div>
 
 <style>
-	span {
-		font-family: 'Great Vibes', cursive;
-	}
-	section {
-		line-height: .9rem;
-	}
+  span {
+    font-family: "Great Vibes", cursive;
+    font-size: 1.2rem;
+    vertical-align: baseline; /* or middle */
+    line-height: 1; /* Can help normalize spacing */
+  }
+  section {
+    line-height: 1.5; /* Use a unitless value instead of a fixed rem */
+  }
 </style>

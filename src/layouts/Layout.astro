@@ -1,33 +1,64 @@
 ---
-import '@fontsource-variable/exo-2';
-import '@fontsource/great-vibes';
+import "@fontsource-variable/exo-2";
+import Exo2Cyrillic from "@fontsource-variable/exo-2/files/exo-2-cyrillic-wght-normal.woff2";
+import Exo2Latin from "@fontsource-variable/exo-2/files/exo-2-latin-wght-normal.woff2";
+import GreatVibesCyrillic from "@fontsource/great-vibes/files/great-vibes-cyrillic-400-normal.woff2";
+import GreatVibesLatin from "@fontsource/great-vibes/files/great-vibes-latin-400-normal.woff2";
+import "@fontsource/great-vibes";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>matvey sokolovsky</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={Exo2Cyrillic}
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={Exo2Latin}
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={GreatVibesCyrillic}
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={GreatVibesLatin}
+      crossorigin="anonymous"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>matvey sokolovsky</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-        font-family: 'Exo 2 Variable', sans-serif;
-
-	}
-
-	code {
-		font-family: 'Great Vibes', cursive;
-	}
+  @font-face {
+    font-family: 'Great Vibes';
+    size-adjust: 140%;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Exo 2 Variable", sans-serif;
+  }
 </style>
